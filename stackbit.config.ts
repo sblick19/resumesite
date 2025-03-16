@@ -5,7 +5,7 @@ export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
   ssgName: "custom",
    devCommand:
-    './node_modules/.bin/ng serve --port {PORT} --disable-host-check`'
+    './node_modules/.bin/ng serve --port {PORT} --disable-host-check`',
   nodeVersion: "18",
   contentSources: [
     new GitContentSource({
