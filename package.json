@@ -8,8 +8,8 @@
     "@stackbit/types": "^2.1.14",
     "dotenv": "^16.4.7",
     "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0"
   },
   "scripts": {
