@@ -42,8 +42,6 @@ export default defineStackbitConfig({
         publicPath: "/images"      // Public path for assets in your app
       }
     })
-    ignoredFiles: [
-        "node_modules/**",  // Ignore everything in node_modules
-      ]
+    
   ]
 });
