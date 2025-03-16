@@ -1,14 +1,17 @@
 {
   "name": "resumesite",
   "version": "1.0.0",
+  "type": "module",   
   "main": "index.html",
   "dependencies": {
-    "@stackbit/cli": "^0.3.133",
-    "@stackbit/cms-git": "^1.0.35",
-    "@stackbit/types": "^2.1.14",
+    "@stackbit/cli": "latest",
+    "@stackbit/cms-git": "latest",
+    "@stackbit/types": "latest",
+    "dotenv": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-helmet": "latest"
   },
   "scripts": {
     "dev": "next dev",
