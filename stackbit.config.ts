@@ -1,22 +1,20 @@
-import { defineStackbitConfig } from "@stackbit/types";
-import { GitContentSource } from "@stackbit/cms-git";
-
 export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
   ssgName: "custom",
-  devCommand: "next dev --port {PORT}", // Correct Next.js dev command
-  buildCommand: "next build", // Add a build command
+  apiKey: process.env.STACKBIT_API_KEY, // Ensure authentication
+  devCommand: "next dev --port {PORT}",
+  buildCommand: "next build",
   nodeVersion: "18",
   contentSources: [
     new GitContentSource({
-      rootPath: __dirname, // Ensure it's pointing to the correct directory
-      contentDirs: ["/"],  // Root directory for content
+      rootPath: __dirname,
+      contentDirs: ["/"],
       models: [
         {
           name: "ResumePage",
           type: "page",
           urlPath: "/resume",
-          filePath: "index.html",  // Main page is index.html
+          filePath: "index.html",
           fields: [
             { name: "title", type: "string", required: true },
             { name: "summary", type: "string" },
@@ -26,8 +24,8 @@ export default defineStackbitConfig({
       ],
       assetsConfig: {
         referenceType: "static",
-        staticDir: "images", // Folder containing images
-        uploadDir: "images", // Keep the upload directory the same
+        staticDir: "images",
+        uploadDir: "images",
         publicPath: "/images"
       }
     })
