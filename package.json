@@ -1,7 +1,7 @@
 {
   "name": "resumesite",
   "version": "1.0.0",
-  "type": "module",   // Add this line to specify module type
+  "type": "module",
   "main": "index.html",
   "dependencies": {
     "@stackbit/cli": "^0.3.133",
