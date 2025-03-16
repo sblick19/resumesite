@@ -2,9 +2,19 @@
   "name": "resumesite",
   "version": "1.0.0",
   "main": "index.html",
-  "dependencies": {},
+  "dependencies": {
+    "@stackbit/cli": "^0.3.133",
+    "@stackbit/cms-git": "^0.0.14",
+    "@stackbit/types": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "stackbit": "npx stackbit dev"
   },
   "repository": {
     "type": "git",
