@@ -1,17 +1,17 @@
 {
   "name": "resumesite",
   "version": "1.0.0",
-  "type": "module",   
+  "type": "module",   // Add this line to specify module type
   "main": "index.html",
   "dependencies": {
-    "@stackbit/cli": "latest",
-    "@stackbit/cms-git": "latest",
-    "@stackbit/types": "latest",
-    "dotenv": "latest",
+    "@stackbit/cli": "^0.3.133",
+    "@stackbit/cms-git": "^1.0.35",
+    "@stackbit/types": "^2.1.14",
+    "dotenv": "^16.4.7",
     "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-helmet": "latest"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "scripts": {
     "dev": "next dev",
