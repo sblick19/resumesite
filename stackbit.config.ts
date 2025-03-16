@@ -3,7 +3,9 @@ import { GitContentSource } from "@stackbit/cms-git";
 
 export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
-  ssgName: "nextjs",
+  ssgName: "custom",
+   devCommand:
+    './node_modules/.bin/ng serve --port {PORT} --disable-host-check`',
   nodeVersion: "18",
   contentSources: [
     new GitContentSource({
