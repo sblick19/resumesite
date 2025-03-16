@@ -15,7 +15,24 @@ export default defineStackbitConfig({
     new GitContentSource({
       rootPath: __dirname,  // Root path for your project
       contentDirs: ["/"],   // Root directory for content
-      models: [],           // No models, as you don't need any
+      models: [
+        {
+          name: "SimpleModel", // Placeholder model
+          type: "page",        // This could be any other model type like "post", "product", etc.
+          fields: [
+            {
+              name: "title",   // Example field
+              type: "string",   // Field type can be "string", "text", etc.
+              required: true,   // Make the field required
+            },
+            {
+              name: "description", // Another example field
+              type: "text",
+              required: false,
+            },
+          ],
+        },
+      ],
 
       // Assets configuration for handling static files
       assetsConfig: {
