@@ -1,5 +1,7 @@
 import { defineStackbitConfig } from "@stackbit/types";
 import { GitContentSource } from "@stackbit/cms-git"; // Ensure this import is correct.
+require('dotenv').config();
+const apiKey = process.env.STACKBIT_API_KEY;
 
 export default defineStackbitConfig({
   stackbitVersion: "~0.6.0",
