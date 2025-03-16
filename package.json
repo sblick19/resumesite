@@ -4,8 +4,8 @@
   "main": "index.html",
   "dependencies": {
     "@stackbit/cli": "^0.3.133",
-    "@stackbit/cms-git": "^0.0.14",
-    "@stackbit/types": "latest",
+    "@stackbit/cms-git": "^1.0.35",
+    "@stackbit/types": "^2.1.14",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
