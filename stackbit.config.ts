@@ -24,6 +24,13 @@ export default defineStackbitConfig({
             { name: "body", type: "markdown", required: true }
           ]
         }
+        assetsConfig: {
+  referenceType: "static",
+  staticDir: "images", // Folder containing images
+  uploadDir: "images", // Keep the upload directory the same
+  publicPath: "/images"
+}
+
       ]
     })
   ]
